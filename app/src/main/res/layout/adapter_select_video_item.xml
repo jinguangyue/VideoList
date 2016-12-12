@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="0.5dp"
+    >
+
+    <ImageView
+        android:id="@+id/simpleDraweeView"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+   <TextView
+       android:id="@+id/text_duration"
+       android:text="default"
+       android:layout_alignBottom="@+id/simpleDraweeView"
+       android:textColor="@color/White"
+       android:textSize="10sp"
+       android:gravity="right|center_vertical"
+       android:paddingRight="6dp"
+       android:background="@color/Black40"
+       android:layout_width="match_parent"
+       android:layout_height="18dp" />
+    
+</RelativeLayout>
