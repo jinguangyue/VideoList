@@ -18,39 +18,6 @@ public class Video {
     private long duration;
     private Bitmap thumbnail;
 
-    /**
-     *
-     */
-    public Video() {
-        super();
-    }
-
-    /**
-     * @param id
-     * @param title
-     * @param album
-     * @param artist
-     * @param displayName
-     * @param mimeType
-     * @param size
-     * @param duration
-     */
-    public Video(int id, String title, String album, String artist,
-                 String displayName, String mimeType, String path, long size,
-                 long duration, Bitmap thumbnail) {
-        super();
-        this.id = id;
-        this.title = title;
-        this.album = album;
-        this.artist = artist;
-        this.displayName = displayName;
-        this.mimeType = mimeType;
-        this.path = path;
-        this.size = size;
-        this.duration = duration;
-        this.thumbnail = thumbnail;
-    }
-
     public Video(int id, String title, String album, String artist,
                  String displayName, String mimeType, String path, long size,
                  long duration) {

@@ -141,7 +141,10 @@ public class SelectVideoActivity extends DefaultBaseActivity implements SwipeRef
             List<Video> templist = new ArrayList<>();
             AllList = new HashMap<>();
 
+            //我需要可以查看所有视频 所以加了这样一个文件夹名称
             AllList.put(" " + getResources().getString(R.string.all_video), list);
+
+            //主要是读取文件夹的名称 做分文件夹的展示
 
             for (Video video : list) {
                 String album = video.getAlbum();
@@ -158,6 +161,7 @@ public class SelectVideoActivity extends DefaultBaseActivity implements SwipeRef
                 }
             }
 
+            //在子线程读取好数据后使用handler 更新
             if (list == null || list.size() == 0) {
                 Message message = new Message();
                 message.what = AppConstant.WHAT.FAILURE;
